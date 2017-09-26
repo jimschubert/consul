@@ -1,6 +1,6 @@
 FROM alpine:edge
 
-ENV CONSUL_VERSION 0.9.0-rc1
+ENV CONSUL_VERSION 0.9.0
 
 RUN  apk add --no-cache wget ca-certificates \
   && wget https://releases.hashicorp.com/consul/${CONSUL_VERSION}/consul_${CONSUL_VERSION}_linux_amd64.zip \
